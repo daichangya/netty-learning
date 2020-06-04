@@ -452,7 +452,7 @@ public static void main(String[] args) throws Exception {
 *   指派给handler或者channle的`EventExecutor` 和 `EventLoop` 总是单线程的.
     *   handler 方法总是被同一个线程调用.
     *   如果使用多线程的`EventExecutor` 或 `EventLoop`, 首先会选择其中一个线程， 然后一直使用这个线程，直到取消注册（deregistration）.
-    *   如果在同意管道pipeline中的两个handler 被指派给不同的 `EventExecutor`, 它们可以被并发地调用. 如果它们访问共享数据， 用户必须小心线程安全 .
+    *   如果在同一管道pipeline中的两个handler 被指派给不同的 `EventExecutor`, 它们可以被并发地调用. 如果它们访问共享数据， 用户必须小心线程安全 .
 *   增加到`ChannelFuture` 的`ChannelFutureListeners` 总是此`Channel`相关的`EventLoop` 执行.
 
 ### 没有 `ExecutionHandler` 了 \- 它被放入核心代码中.
