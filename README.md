@@ -73,6 +73,10 @@ twitter关于3.0与4.0中Channel Event的说明：
 
 	阿里巴巴的RPC中间件。支持Netty和Mina。
 
+* ### [Panda](https://github.com/daichangya/panda)
+
+  基于Netty的 Java Web服务器。
+
 * ### [Finagle](https://github.com/twitter/finagle)
 
 	Twitter的RPC中间件。使用Scala编写。
